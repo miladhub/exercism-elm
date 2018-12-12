@@ -9,8 +9,8 @@ hey s =
     else "Whatever."
 
 question : String -> Bool
-question s =
-    (not << List.isEmpty << String.words) s && (String.endsWith "?") s
+question =
+  String.endsWith "?"
 
 yell : String -> Bool
 yell s =
